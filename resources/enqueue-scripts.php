@@ -22,3 +22,10 @@ function enqueue_colin_styles(){
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_colin_styles', 0 );
+
+function add_google_font_raleway() {
+
+wp_enqueue_style( 'google-font-raleway', 'https://fonts.googleapis.com/css?family=Raleway:200,300,400,500&display=swap', false ); 
+}
+
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\add_google_font_raleway' );
