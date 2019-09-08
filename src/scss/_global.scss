@@ -1,10 +1,12 @@
 @media only screen and (min-width: 800px) {
+
   .site-inner {
     margin-top: 0 !important;
     max-width: 100% !important;
   }
   header.site-header {
     background-color: transparent;
+    color: transparent;
     border: none;
   }
   .white header.site-header {
