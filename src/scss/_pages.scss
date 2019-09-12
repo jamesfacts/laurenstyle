@@ -1,5 +1,6 @@
 .page-books,
-.page-coaching {
+.page-coaching,
+.page-speaking {
   .entry-header {
     display: none;
   }
@@ -64,7 +65,8 @@
   }
 
   .page-books,
-  .page-coaching {
+  .page-coaching,
+  .page-speaking {
     #genesis-content {
       padding: 0;
       max-width: 100%;
