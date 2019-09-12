@@ -1,0 +1,85 @@
+.page-books {
+  .entry-header {
+    display: none;
+  }
+
+  .site-inner {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+// book page items
+
+.book-column-wrapper {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+
+@media only screen and (min-width: 510px) {
+  .book-column-wrapper {
+    .wp-block-column:not(:first-child) {
+      padding-left: 2rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .book-column-wrapper {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .wp-block-column:not(:first-child) {
+      padding-left: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  /* Pages with dark lede images */
+
+  .page-books {
+    .site-title a,
+    .menu a {
+      color: white;
+    }
+
+    .site-title a:hover {
+      color: white;
+    }
+
+    // this is when the Genesis js applies a menu bg
+
+    .white {
+      .site-title a,
+      .menu a {
+        color: black;
+      }
+    }
+  }
+
+  .page-books {
+    #genesis-content {
+      padding: 0;
+      max-width: 100%;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  .book-column-wrapper {
+    max-width: 750px;
+  }
+  .entry-content h4,
+  .entry-content h3,
+  .entry-content h2 {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
