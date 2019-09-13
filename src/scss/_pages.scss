@@ -1,7 +1,8 @@
 .page-books,
 .page-coaching,
 .page-speaking,
-.page-leading {
+.page-leading,
+.page-press {
   .entry-header {
     display: none;
   }
@@ -46,7 +47,8 @@
   /* Pages with dark lede images */
 
   .page-books,
-  .page-leading {
+  .page-leading,
+  .page-press {
     .site-title a,
     .menu a {
       color: white;
@@ -69,7 +71,8 @@
   .page-books,
   .page-coaching,
   .page-speaking,
-  .page-leading {
+  .page-leading,
+  .page-press {
     #genesis-content {
       padding: 0;
       max-width: 100%;

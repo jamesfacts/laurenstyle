@@ -1,0 +1,36 @@
+@media only screen and (min-width: 510px) {
+  .page-press {
+    .pod-img {
+      margin: 4%;
+    }
+
+    img {
+      border: 1px solid black;
+    }
+
+    .wp-block-columns.has-3-columns {
+      margin-left: 4%;
+      margin-right: 4%;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 510px) {
+  .page-press {
+    .wp-block-column:nth-child(2n),
+    .wp-block-column:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .page-press {
+    .wp-block-columns.has-3-columns {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
