@@ -21,7 +21,12 @@
   padding-right: 2rem;
 }
 
+.lede-coaching {
 
+  .colin-quote {
+    font-weight: 600;
+  }
+}
 
 @media only screen and (min-width: 510px) {
   .book-column-wrapper {
@@ -87,8 +92,8 @@
       justify-content: space-around;
     }
     .colin-quote {
-      margin-top: 10%;
-      max-width: 75%;
+      margin-top: 8%;
+      max-width: 90%;
     }
   }
 
