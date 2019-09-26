@@ -9,6 +9,13 @@
     margin: 0;
   }
 
+  /* Kona IG block plugin */
+
+  .wp-block-cgb-kona-instagram-for-gutenberg {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
 }
 
 .three-obessions {
@@ -79,6 +86,14 @@
   }
 }
 
+@media only screen and (min-width: 540px) {
+ .home {
+   .wp-block-cgb-kona-instagram-for-gutenberg .kona-grid {
+     grid-template-columns: repeat(3, 1fr) !important;
+   }
+ }
+}
+
 @media only screen and (min-width: 600px) {
   .three-obessions {
     .wp-block-column:nth-child(2n) {
@@ -136,6 +151,11 @@
     }
   }
 
+  .wp-block-cgb-kona-instagram-for-gutenberg .kona-grid {
+    max-width: 1100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
