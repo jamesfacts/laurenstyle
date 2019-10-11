@@ -14,6 +14,11 @@
   }
 }
 
+.entry-content {
+  hr.invisible-seperator {
+    border-bottom: 2px solid transparent;
+  }
+}
 
 // book page items
 
@@ -31,7 +36,8 @@
 
 //
 .wp-block-embed-vimeo.landing-vimeo,
-.wp-block-embed-youtube.landing-youtube {
+.wp-block-embed-youtube.landing-youtube,
+.wp-block-embed figcaption {
   max-width: 860px;
   margin-left: auto;
   margin-right: auto;
