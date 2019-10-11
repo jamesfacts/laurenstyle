@@ -49,6 +49,20 @@
   max-width: 100%;
 }
 
+body.page .entry-content .wp-block-quote::before {
+  color: #222;
+  font-size: 16px;
+  left: -13px;
+  top: 5px;
+}
+
+.content .landing-cta-btn .wp-block-button__link {
+  background-color: black !important;
+  &:hover {
+    background-color: #ca4c19 !important;
+  }
+}
+
 @media only screen and (min-width: 510px) {
   .book-column-wrapper {
     .wp-block-column:not(:first-child) {
