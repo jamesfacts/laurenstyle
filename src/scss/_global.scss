@@ -8,6 +8,26 @@
   border: 1px solid #333;
 }
 
+.small-menu-social {
+  display: flex;
+  justify-content: center;
+
+  a {
+    display: inline-block;
+    max-width: 25%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    &:hover {
+      fill: #ca4c19;
+    }
+  }
+}
+
+.big-menu-social {
+  display: none;
+}
+
 @media only screen and (min-width: 800px) {
 
   .site-inner {
@@ -26,5 +46,19 @@
   .white header.site-header {
     background-color: #fff;
     border-bottom: 1px solid #eee;
+  }
+
+  .small-menu-social {
+    display: none;
+  }
+
+  .big-menu-social {
+    display: flex;
+    float: right;
+    padding-top: 27px;
+
+    a {
+      padding-left: 1.5rem;
+    }
   }
 }

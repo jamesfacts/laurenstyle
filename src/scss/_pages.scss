@@ -98,12 +98,20 @@ body.page .entry-content .wp-block-quote::before {
       color: white;
     }
 
+    .big-menu-social svg {
+      fill: white;
+    }
+
     // this is when the Genesis js applies a menu bg
 
     .white {
       .site-title a,
       .menu a {
         color: black;
+      }
+
+      .big-menu-social svg {
+        fill: #000;
       }
     }
   }
