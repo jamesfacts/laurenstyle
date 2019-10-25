@@ -74,6 +74,10 @@
     }
   }
 
+  header.entry-header {
+    margin-top: 70px;
+  }
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -94,6 +98,10 @@
 
   .big-menu-social {
     padding-top: 20px;
+  }
+
+  header.entry-header {
+    margin-top: 20px;
   }
 
 }
