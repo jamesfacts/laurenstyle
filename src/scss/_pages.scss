@@ -187,13 +187,26 @@ body.page .entry-content .wp-block-quote::before {
 
   .consulting-lede {
     .colin-quote {
-      margin-right: 7%;
+      max-width: 650px;
+      margin-right: -1%;
     }
   }
 
   .lede-coaching {
     .colin-quote {
       margin-right: 12%;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  // consulting only
+
+  .consulting-lede {
+    .colin-quote {
+      margin-right: auto;
+      margin-left: 50%;
     }
   }
 }
