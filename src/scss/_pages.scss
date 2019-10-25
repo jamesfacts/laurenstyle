@@ -1,7 +1,7 @@
 .page-books,
 .page-coaching,
 .page-speaking,
-.page-leading,
+.page-consulting,
 .page-press,
 .page-articles {
   .entry-header {
@@ -87,7 +87,7 @@ body.page .entry-content .wp-block-quote::before {
   /* Pages with dark lede images */
 
   .page-books,
-  .page-leading,
+  .page-consulting,
   .page-press {
     .site-title a,
     .menu a {
@@ -111,7 +111,7 @@ body.page .entry-content .wp-block-quote::before {
   .page-books,
   .page-coaching,
   .page-speaking,
-  .page-leading,
+  .page-consulting,
   .page-press,
   .page-articles {
     #genesis-content {
@@ -141,9 +141,9 @@ body.page .entry-content .wp-block-quote::before {
     }
   }
 
-  // leading only
+  // consulting only
 
-  .leading-lede {
+  .consulting-lede {
     .colin-quote {
       max-width: 50%;
     }
@@ -183,9 +183,9 @@ body.page .entry-content .wp-block-quote::before {
 
 
 @media only screen and (min-width: 1200px) {
-  // leading only
+  // consulting only
 
-  .leading-lede {
+  .consulting-lede {
     .colin-quote {
       margin-right: 7%;
     }
