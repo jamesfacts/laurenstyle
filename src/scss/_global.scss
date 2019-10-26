@@ -28,6 +28,23 @@
   display: none;
 }
 
+.assistive-text,
+.search-toggle,
+.wrap > #searchform {
+  display: none;
+}
+
+.mobile-search-wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+
+  .field {
+    padding: 15px;
+    font-size: 1.8rem;
+  }
+}
+
 @media only screen and (min-width: 800px) {
 
   .site-inner {
@@ -48,17 +65,21 @@
     border-bottom: 1px solid #eee;
   }
 
-  .small-menu-social {
+  .small-menu-social,
+  .mobile-search-wrapper {
     display: none;
   }
 
   .big-menu-social {
     display: flex;
     float: right;
-    padding-top: 27px;
+    padding-top: 20px;
 
     a {
       padding-left: 1.5rem;
+      &:hover {
+        fill: #ca4c19;
+      }
     }
   }
 
@@ -71,11 +92,30 @@
 
     a {
       padding: 20px;
+      padding-top: 24px;
     }
   }
 
-  header.entry-header {
+  header.entry-header,
+  .archive-description {
     margin-top: 70px;
+  }
+
+  .search-toggle {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+  }
+
+  .wrap > #searchform {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .wrap > #searchform.show {
+    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 
 }
@@ -83,7 +123,11 @@
 @media only screen and (min-width: 1400px) {
 
   .wrap > .nav-primary {
-    width: 65%;
+    width: 67%;
+  }
+
+  .wrap > .title-area {
+    width: 19%;
   }
 
   .nav-primary .wrap {
@@ -93,6 +137,7 @@
 
     a {
       padding: 30px 20px;
+      padding-top: 25px;
     }
   }
 
@@ -100,7 +145,8 @@
     padding-top: 20px;
   }
 
-  header.entry-header {
+  header.entry-header,
+  .archive-description {
     margin-top: 20px;
   }
 
