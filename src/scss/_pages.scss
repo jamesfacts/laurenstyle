@@ -63,12 +63,33 @@ body.page .entry-content .wp-block-quote::before {
   }
 }
 
+.publication-columns .wp-block-image {
+  text-align: center;
+}
+
 @media only screen and (min-width: 510px) {
   .book-column-wrapper {
     .wp-block-column:not(:first-child) {
       padding-left: 2rem;
     }
   }
+
+  .entry-content {
+    .publication-columns {
+      justify-content: space-around;
+      margin-bottom: 0 !important;
+
+      .wp-block-image {
+        margin-bottom: 0;
+      }
+    }
+
+    .wp-block-columns.publication-columns .wp-block-column {
+      flex-basis: calc(50% - 16px);
+      flex-grow: 0;
+    }
+  }
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -79,6 +100,13 @@ body.page .entry-content .wp-block-quote::before {
 
     .wp-block-column:not(:first-child) {
       padding-left: 0;
+    }
+  }
+
+  .entry-content {
+    .publication-columns {
+      margin-left: 4rem;
+      margin-right: 4rem;
     }
   }
 }
@@ -186,6 +214,15 @@ body.page .entry-content .wp-block-quote::before {
     }
   }
 
+  // articles / writing
+
+  .entry-content {
+    .publication-columns {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
 }
 
