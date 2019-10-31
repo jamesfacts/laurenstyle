@@ -91,8 +91,15 @@
     margin-right: auto;
 
     a {
-      padding: 17px;
-      padding-top: 24px;
+      padding-left: 17px;
+      padding-right: 17px;
+      padding-top: 22px;
+      padding-bottom: 0;
+    }
+
+    .special-two-row a {
+      padding-top: 0;
+      padding-bottom: 25px;
     }
   }
 
@@ -136,9 +143,9 @@
     padding-top: 0;
     padding-bottom: 0;
 
-    a {
-      padding: 30px 20px;
-      padding-top: 25px;
+    a,
+    .special-two-row a {
+      padding: 19px 20px;
     }
   }
 
