@@ -150,6 +150,15 @@
     #mc-embedded-subscribe-form {
       margin-top: 6rem;
     }
+
+    .mc-field-container {
+      display: inherit;
+
+      .mc-field-group {
+        width: 100%;
+      }
+
+    }  
   }
 
   .wp-block-cgb-kona-instagram-for-gutenberg .kona-grid {
