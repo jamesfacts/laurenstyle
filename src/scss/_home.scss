@@ -157,6 +157,12 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
+  .front-page-service a {
+    &:hover {
+      color: #ec642e;
+    }
+  }
 }
 
 @media only screen and (min-width: 1200px) {
