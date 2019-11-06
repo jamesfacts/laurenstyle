@@ -48,5 +48,14 @@ export default {
     $('.site-header > .wrap').append( $bigSocialHtml );
 
     $('.site-footer p').html( footerHTML );
+
+    // Remove the 'XX comments' and 'by Colin Beavan' while retaining a date
+
+    $('article.post').each((index, post) => {
+      let entryHeader = $(post).find('.entry-header');
+      let timeStamp = $(post).find('.entry-time');
+
+      entryHeader.append(timeStamp);
+    });
   },
 };

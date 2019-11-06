@@ -45,6 +45,12 @@
   }
 }
 
+// hide layout component that shows count of comments and byline
+
+.entry-meta {
+  display: none;
+}
+
 @media only screen and (min-width: 800px) {
 
   .site-inner {
