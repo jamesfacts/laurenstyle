@@ -51,6 +51,28 @@
   display: none;
 }
 
+footer .credits {
+  margin-top: 1rem;
+  line-height: 2.7rem;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  li.pipe {
+    display: none;
+  }
+
+  li {
+    flex-grow: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @media only screen and (min-width: 800px) {
 
   .site-inner {
@@ -130,6 +152,23 @@
     display: block;
     visibility: visible;
     opacity: 1;
+  }
+
+  footer .credits {
+    ul {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    li {
+      width: inherit;
+    }
+
+    li.pipe {
+      display: inline-block;
+      width: 1%;
+    }
   }
 
 }
