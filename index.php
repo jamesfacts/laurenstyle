@@ -54,3 +54,6 @@ function _get_plugin_url() {
 
 // Enqueue JS and CSS
 include __DIR__ . '/resources/enqueue-scripts.php';
+
+// Add special functions
+include __DIR__ . '/resources/functions.php';

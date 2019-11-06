@@ -1,4 +1,4 @@
-import viewport from '../util/viewport'
+import viewport from '../util/viewport';
 import socialIcons from '../paths/social-icons';
 import searchIcon from '../paths/search';
 import searchForm from '../util/searchForm';
