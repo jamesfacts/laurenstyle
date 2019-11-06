@@ -1,0 +1,33 @@
+.in-post-email {
+  margin-bottom: 4rem;
+
+  .email-hed {
+    margin-top: 7rem;
+  }
+}
+
+.mc-field-container {
+  text-align: center;
+
+  .mc-button {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+
+  .mc-field-container {
+    display: flex;
+
+    .mc-field-group {
+      width: 70%;
+    }
+
+    .mc-button {
+      width: 28%;
+      margin-top: 0;
+    }
+  }
+
+}
