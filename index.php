@@ -57,3 +57,6 @@ include __DIR__ . '/resources/enqueue-scripts.php';
 
 // Add special functions
 include __DIR__ . '/resources/functions.php';
+
+// Add shortcodes
+include __DIR__ . '/resources/shortcodes.php';

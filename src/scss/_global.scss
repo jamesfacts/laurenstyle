@@ -73,6 +73,12 @@ footer .credits {
   }
 }
 
+header.entry-header {
+  &:after {
+    visibility: hidden;
+  }
+}
+
 @media only screen and (min-width: 800px) {
 
   .site-inner {
