@@ -5,6 +5,7 @@ import 'jquery';
 import Router from './js/util/Router';
 import common from './js/routes/common';
 import home from './js/routes/home';
+import singlePost from './js/routes/singlePost';
 
 /**
  * Populate Router instance with DOM routes
@@ -15,6 +16,8 @@ const routes = new Router({
   common,
   /** Home page */
   home,
+  /** blog post single view **/
+  singlePost,
 });
 
 /** Load Events */
