@@ -19,6 +19,15 @@
   margin-top: 8rem;
 }
 
+.boxzilla-container .boxzilla {
+  max-width: 500px;
+
+  .boxzilla-close-icon {
+    font-size: 65px;
+    right: 4px;
+  }
+}
+
 @media only screen and (min-width: 800px) {
 
   .mc-field-container {
