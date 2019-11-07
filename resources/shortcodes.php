@@ -35,3 +35,49 @@ function mcSubForm( $atts ) {
 }
 
 add_shortcode( 'mc-embed', __NAMESPACE__ . '\mcSubForm' );
+
+
+/**
+ * Create a shortcode to embed a Genesis search form
+ *
+ * @author James White
+ * @param string The form markup.
+ * @param string Submit button value.
+ * @param string Form label value.
+ */
+
+function genesisSearch( $atts ) {
+  $atts = shortcode_atts( ['submit' => 'Search',
+                          'placeholder' => 'Search here. . .' ],
+                          $atts) ;
+
+  $search_query = apply_filters( 'the_search_query', get_search_query() );
+
+  $search_button_text = $atts['submit'] ?? apply_filters( 'genesis_search_button_text', esc_attr__( 'Search', 'genesis' ) );
+
+  $search_text = $atts['placeholder'] ?? apply_filters( 'genesis_search_text', __( 'Search this website', 'genesis' ) );
+
+  $search_label = apply_filters( 'genesis_search_form_label', '' );
+
+  $strings = [
+  	'label'        => $search_label,
+  	'placeholder'  => $search_query ?: $search_text,
+  	'input_value'  => $search_query,
+  	'submit_value' => $search_button_text,
+  ];
+
+  $form = new \Genesis_Search_Form( $strings );
+
+  // Used for filter param 2.
+  $search_query_or_text = $search_query ?: $search_text;
+
+  // echo "****";
+  // var_dump($search_query_or_text);
+
+  $searchform = apply_filters( 'genesis_search_form', $form->get_form(),
+    $search_query_or_text, $strings['submit_value'], $strings['label'] );
+
+  echo $searchform;
+}
+
+add_shortcode( 'genesis-search', __NAMESPACE__ . '\genesisSearch' );

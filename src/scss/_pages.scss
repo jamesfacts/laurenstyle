@@ -202,6 +202,14 @@ body.page .entry-content .wp-block-quote::before {
     }
   }
 
+  // styling the Genesis search form for use as a shortcode
+
+  .entry-content form.search-form {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+  }
+
 }
 
 @media only screen and (min-width: 1000px) {
