@@ -55,7 +55,7 @@ function genesisSearch( $atts ) {
 
   $search_button_text = $atts['submit'] ?? apply_filters( 'genesis_search_button_text', esc_attr__( 'Search', 'genesis' ) );
 
-  $search_text = $atts['placeholder'] ?? apply_filters( 'genesis_search_text', __( 'Search this website', 'genesis' ) );
+  $search_text = $atts['placeholder'] ?? apply_filters( 'genesis_search_text', __( 'Search here. . .', 'genesis' ) );
 
   $search_label = apply_filters( 'genesis_search_form_label', '' );
 
@@ -71,13 +71,10 @@ function genesisSearch( $atts ) {
   // Used for filter param 2.
   $search_query_or_text = $search_query ?: $search_text;
 
-  // echo "****";
-  // var_dump($search_query_or_text);
-
   $searchform = apply_filters( 'genesis_search_form', $form->get_form(),
     $search_query_or_text, $strings['submit_value'], $strings['label'] );
 
-  echo $searchform;
+  return $searchform;
 }
 
 add_shortcode( 'genesis-search', __NAMESPACE__ . '\genesisSearch' );
