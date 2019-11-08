@@ -12,8 +12,7 @@ export default {
     // JavaScript to be fired on the home page, after the init JS
 
     const footerHTML =
-      `<div class="copyright"><p>© Colin Beavan ${ new Date().getFullYear() }</p></div>
-      <div class="credits"><ul><li>Photo: <a href="https://www.thomasbrunot.com/">Thomas Brunot</a></li><li class="pipe">|</li><li>Design Direction: <a href="https://www.tamarsamir.com/">Tamar Samir</a></li><li class="pipe">|</li><li>Development: <a href="https://jamesfacts.com">James White</a></li></ul></div>`;
+      `<small class="credits"><ul><li>Photo: <a href="https://www.thomasbrunot.com/">Thomas Brunot</a></li><li class="pipe">|</li><li>Design Direction: <a href="https://www.tamarsamir.com/">Tamar Samir</a></li><li class="pipe">|</li><li>Development: <a href="https://jamesfacts.com">James White</a></li></ul></small><div class="copyright"><small>© Colin Beavan ${ new Date().getFullYear() }</small></div>`;
 
     let $seachLink = $( '<a/>' ).append( searchIcon );
     let $searchToggle = $( '<li/>', { class: 'search-toggle' })
