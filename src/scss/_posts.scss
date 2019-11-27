@@ -28,6 +28,43 @@
   }
 }
 
+/* social sharing buttons */
+
+.entry-content .entry-share {
+  .entry-share-btns {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 3rem;
+    margin-bottom: 4rem;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .entry-share-btn-icon {
+    top: 6px;
+  }
+
+  .entry-share-btns a {
+    border-radius: 50px;
+    padding: .25em .65em;
+    background-color: black;
+    &:hover {
+      background-color: #ca4c19;
+    }
+
+    span {
+      display: none !important;
+    }
+  }
+
+  .entry-share-btn-linkedin .entry-share-btn-icon {
+    left: 2px;
+  }
+}
+
 @media only screen and (min-width: 800px) {
 
   .mc-field-container {
