@@ -108,19 +108,6 @@ header.entry-header {
     display: none;
   }
 
-  .big-menu-social {
-    display: flex;
-    float: right;
-    padding-top: 20px;
-
-    a {
-      padding-left: 1.5rem;
-      &:hover {
-        fill: #ca4c19;
-      }
-    }
-  }
-
   .nav-primary .wrap {
     width: 520px;
     padding-top: 10px;
@@ -183,14 +170,42 @@ header.entry-header {
 
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 801px) {
+  .big-menu-social {
+    display: flex;
+    float: right;
+    padding-top: 20px;
+
+    a {
+      padding-left: 1.5rem;
+      &:hover {
+        fill: #ca4c19;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 875px) {
+
+  nav.nav-primary {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+
+  nav.nav-primary {
+    width: 62%;
+  }
+}
+@media only screen and (min-width: 1300px) {
 
   .wrap > .nav-primary {
-    width: 67%;
+    width: 74%;
   }
 
   .wrap > .title-area {
-    width: 19%;
+    width: 15%;
   }
 
   .nav-primary .wrap {
@@ -200,7 +215,7 @@ header.entry-header {
 
     a,
     .special-two-row a {
-      padding: 19px 20px;
+      padding: 19px 15px;
     }
   }
 
