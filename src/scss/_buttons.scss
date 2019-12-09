@@ -1,0 +1,21 @@
+.wp-block-button.linktree {
+
+  a.wp-block-button__link {
+    width: 400px;
+    background-color: #ca4c19 !important;
+
+    &:hover {
+      background-color: #222 !important;
+    }
+  }
+
+}
+
+.wp-block-button.linktree.is-style-outline {
+  a.wp-block-button__link {
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+  
+}
