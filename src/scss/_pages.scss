@@ -4,7 +4,8 @@
 .page-consulting,
 .page-press,
 .page-articles,
-.page-the-institute {
+.page-the-institute,
+.page-courses {
   .entry-header {
     display: none;
   }
@@ -136,7 +137,8 @@ body.page .entry-content .wp-block-quote::before {
   .page-books,
   .page-consulting,
   .page-press,
-  .page-the-institute {
+  .page-the-institute,
+  .page-courses {
     .site-title a,
     .menu a {
       color: white;
@@ -170,7 +172,8 @@ body.page .entry-content .wp-block-quote::before {
   .page-consulting,
   .page-press,
   .page-articles,
-  .page-the-institute {
+  .page-the-institute,
+  .page-courses {
     #genesis-content {
       padding: 0;
       max-width: 100%;
