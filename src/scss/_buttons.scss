@@ -2,6 +2,7 @@
 
   a.wp-block-button__link {
     width: 400px;
+    max-width: 100%;
     background-color: #ca4c19 !important;
 
     &:hover {
@@ -17,5 +18,5 @@
       background-color: transparent !important;
     }
   }
-  
+
 }
