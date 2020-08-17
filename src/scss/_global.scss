@@ -1,12 +1,15 @@
-.site-header {
-  .site-title a {
-    text-transform: none;
-  }
+.offscreen-content-icon {
+  display: none;
 }
 
-.border-one-px img {
-  border: 1px solid #333;
+.front-page .nav-primary .genesis-nav-menu a {
+  color: black !important;
 }
+
+.front-page .nav-primary .genesis-nav-menu a:hover {
+  color: #606060 !important;
+}
+
 
 .small-menu-social {
   display: flex;
@@ -19,9 +22,13 @@
     margin-right: 1rem;
 
     &:hover {
-      fill: #ca4c19;
+      fill: #606060;
     }
   }
+}
+
+.menu-toggle:hover {
+  color: #606060;
 }
 
 .big-menu-social {
@@ -58,41 +65,11 @@ footer .copyright {
 footer .credits {
   margin-top: 1rem;
   line-height: 2.7rem;
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  li.pipe {
-    display: none;
-  }
-
-  li {
-    flex-grow: 1;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
 
-header.entry-header {
-  &:after {
-    visibility: hidden;
-  }
-}
 
 @media only screen and (min-width: 800px) {
 
-  .site-inner {
-    margin-top: 0 !important;
-    max-width: 100% !important;
-  }
-
-  .blog .site-inner {
-    max-width: 1280px !important;
-  }
   header.site-header {
     background-color: transparent;
     color: transparent;
@@ -177,9 +154,12 @@ header.entry-header {
     padding-top: 20px;
 
     a {
-      padding-left: 1.5rem;
+      padding-left: 2.2rem;
+      display: flex;
+      align-items: center;
+
       &:hover {
-        fill: #ca4c19;
+        fill: #606060;
       }
     }
   }
@@ -188,21 +168,17 @@ header.entry-header {
 @media only screen and (min-width: 875px) {
 
   nav.nav-primary {
-    width: 65%;
+    width: 55%;
   }
 }
 
 @media only screen and (min-width: 1100px) {
 
   nav.nav-primary {
-    width: 62%;
+    width: 55%;
   }
 }
 @media only screen and (min-width: 1300px) {
-
-  .wrap > .nav-primary {
-    width: 74%;
-  }
 
   .wrap > .title-area {
     width: 15%;

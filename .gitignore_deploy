@@ -4,10 +4,10 @@
 !.gitignore
 !wp-content/
 
-wp-content/plugins/colinstyles/package-lock.json
-wp-content/plugins/colinstyles/node_modules
-wp-content/plugins/colinstyles/blocks
-wp-content/plugins/colinstyles/.circleci
-wp-content/plugins/colinstyles/webpack.config.js
-wp-content/plugins/colinstyles/.babelrc
-wp-content/plugins/colinstyles/deploy.sh
+wp-content/plugins/laurenstyle/package-lock.json
+wp-content/plugins/laurenstyle/node_modules
+wp-content/plugins/laurenstyle/blocks
+wp-content/plugins/laurenstyle/.circleci
+wp-content/plugins/laurenstyle/webpack.config.js
+wp-content/plugins/laurenstyle/.babelrc
+wp-content/plugins/laurenstyle/deploy.sh

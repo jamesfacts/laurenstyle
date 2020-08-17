@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: ColinStyles - Custom styles for ColinBeavan dot com
- * Plugin URI: https://github.com/jamesfacts/colin-blocks
+ * Plugin Name: LaurenStyle - Custom styles for LaurenKrauze dot com
+ * Plugin URI: https://github.com/jamesfacts/laurenstyle
  * Description: CSS / JS assets to modify the Genesis Infinity Pro theme.
  * Text Domain: colinstyles
  * Domain Path: resources/languages
@@ -11,10 +11,10 @@
  * License: MIT
  * License URI: https://opensource.org/licenses/MIT
  *
- * @package colinstyles
+ * @package laurenstyle
  */
 
-namespace Colin\Colin_Styles;
+namespace Lauren\Lauren_Style;
 
 //  Exit if accessed directly.
 defined('ABSPATH') || exit;
@@ -29,8 +29,9 @@ defined('ABSPATH') || exit;
  *
  * @return string
  */
-function _get_plugin_directory() {
-	return __DIR__;
+function _get_plugin_directory()
+{
+    return __DIR__;
 }
 
 /**
@@ -42,14 +43,15 @@ function _get_plugin_directory() {
  *
  * @return string
  */
-function _get_plugin_url() {
-	static $plugin_url;
+function _get_plugin_url()
+{
+    static $plugin_url;
 
-	if ( empty( $plugin_url ) ) {
-		$plugin_url = plugins_url( null, __FILE__ );
-	}
+    if (empty($plugin_url)) {
+        $plugin_url = plugins_url(null, __FILE__);
+    }
 
-	return $plugin_url;
+    return $plugin_url;
 }
 
 // Enqueue JS and CSS

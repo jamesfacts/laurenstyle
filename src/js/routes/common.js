@@ -5,14 +5,13 @@ import searchForm from '../util/searchForm';
 
 export default {
   init() {
-    // JavaScript to be fired on the home page
 
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
 
     const footerHTML =
-      `<small class="credits"><ul><li>Photo: <a href="https://www.thomasbrunot.com/">Thomas Brunot</a></li><li class="pipe">|</li><li>Design Direction: <a href="https://www.tamarsamir.com/">Tamar Samir</a></li><li class="pipe">|</li><li>Development: <a href="https://jamesfacts.com">James White</a></li></ul></small><div class="copyright"><small>© Colin Beavan ${ new Date().getFullYear() }</small></div>`;
+      `<small class="credits">Copyright ${ new Date().getFullYear() } © Lauren Krauze. All Rights Reserved.</small></div>`;
 
     let $seachLink = $( '<a/>' ).append( searchIcon );
     let $searchToggle = $( '<li/>', { class: 'search-toggle' })
@@ -25,38 +24,29 @@ export default {
     let $mobileSearchWrapper = $( '<li/>', { class: 'mobile-search-wrapper' })
                                 .append( searchForm );
 
-    $('.wrap > .menu-primary').append( $mobileSearchWrapper )
-                              .append( $searchToggle );
+    // $('.wrap > .menu-primary').append( $mobileSearchWrapper )
+    //                           .append( $searchToggle );
 
-    $('.nav-primary > .wrap').append( searchForm );
+    // $('.nav-primary > .wrap').append( searchForm );
 
-    let $fbAnchor = $('<a/>').attr('href', 'https://www.facebook.com/ColinBeavan/').append( socialIcons.fb );
-    let $igAnchor = $('<a/>').attr('href', 'https://www.instagram.com/colinbeavan/?hl=en').append( socialIcons.ig );
-    let $twitterAnchor = $('<a/>').attr('href', 'https://twitter.com/colinbeavan?lang=en').append( socialIcons.twitter );
+    let $fbAnchor = $('<a/>').attr('href', 'XX').append( socialIcons.fb );
+    let $igAnchor = $('<a/>').attr('href', 'XX').append( socialIcons.ig );
+    let $emailAnchor = $('<a/>').attr('href', 'XX').append( socialIcons.email );
 
     let $smallSocialHtml = $( '<li/>', { class: 'small-menu-social' })
                            .append( $fbAnchor.clone() )
                            .append( $igAnchor.clone() )
-                           .append( $twitterAnchor.clone() );
+                           .append( $emailAnchor.clone() );
 
     $('.menu.menu-primary').append( $smallSocialHtml );
 
     let $bigSocialHtml = $( '<div>', { class: 'big-menu-social' })
                           .append( $fbAnchor.clone() )
                           .append( $igAnchor.clone() )
-                          .append( $twitterAnchor.clone() );
+                          .append( $emailAnchor.clone() );
 
     $('.site-header > .wrap').append( $bigSocialHtml );
 
     $('.site-footer p').html( footerHTML );
-
-    // Remove the 'XX comments' and 'by Colin Beavan' while retaining a date
-
-    $('article.post').each((index, post) => {
-      let entryHeader = $(post).find('.entry-header');
-      let timeStamp = $(post).find('.entry-time');
-
-      entryHeader.append(timeStamp);
-    });
   },
 };
