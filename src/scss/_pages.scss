@@ -1,320 +1,55 @@
-.page-books,
-.page-coaching,
-.page-speaking,
-.page-consulting,
-.page-press,
-.page-articles,
-.page-the-institute,
-.page-courses {
-  .entry-header {
-    display: none;
-  }
+body.page {
+  // styling the Genesis search form for use as a shortcode
+  .entry-content form.search-form {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
 
+    .search-form-input {
+      font-size: 2.3rem;
+      padding-top: 6px;
+    }
+
+    .search-form-submit {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+body.page-writing {
   .site-inner {
-    padding: 0;
-    margin: 0;
-  }
-}
-
-.entry-content {
-  hr.invisible-separator {
-    border-bottom: 2px solid transparent;
-  }
-}
-
-// book page items
-
-.book-column-wrapper {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.lede-coaching {
-
-  .colin-quote {
-    font-weight: 600;
-  }
-}
-
-//
-.wp-block-embed-vimeo.landing-vimeo,
-.wp-block-embed-youtube.landing-youtube,
-.wp-block-embed figcaption {
-  max-width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.landing-cc-embed {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-}
-
-body.page .entry-content .wp-block-quote::before {
-  color: #222;
-  font-size: 16px;
-  left: -13px;
-  top: 5px;
-}
-
-.content .entry-content .landing-cta-btn .wp-block-button__link {
-  background-color: #ca4c19 !important;
-  &:hover {
-    background-color: black !important;
-  }
-}
-
-.publication-columns .wp-block-image {
-  text-align: center;
-}
-
-@media only screen and (min-width: 510px) {
-  .book-column-wrapper {
-    .wp-block-column:not(:first-child) {
-      padding-left: 2rem;
-    }
-  }
-
-  .entry-content {
-    .publication-columns {
-      justify-content: space-around;
-      margin-bottom: 0 !important;
-
-      .wp-block-image {
-        margin-bottom: 0;
-      }
-    }
-
-    .wp-block-columns.publication-columns .wp-block-column {
-      flex-basis: calc(50% - 16px);
-      flex-grow: 0;
-    }
-  }
-
-}
-
-// styling the Genesis search form for use as a shortcode
-
-.entry-content form.search-form {
-  width: 100%;
-  max-width: 550px;
-  text-align: center;
-
-  .search-form-input {
-    font-size: 2.3rem;
-    padding-top: 6px;
-  }
-
-  .search-form-submit {
-    font-size: 1.4rem;
-  }
-}
-
-
-@media only screen and (min-width: 600px) {
-  .book-column-wrapper {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-
-    .wp-block-column:not(:first-child) {
-      padding-left: 0;
-    }
-  }
-
-  .entry-content {
-    .publication-columns {
-      margin-left: 4rem;
-      margin-right: 4rem;
-    }
+    padding-top: 3rem;
   }
 }
 
 @media only screen and (min-width: 800px) {
-  /* Pages with dark lede images */
-
-  .page-books,
-  .page-consulting,
-  .page-press,
-  .page-the-institute,
-  .page-courses {
-    .site-title a,
-    .menu a {
-      color: white;
-    }
-
-    .site-title a:hover {
-      color: white;
-    }
-
-    .big-menu-social svg {
-      fill: white;
-    }
-
-    // this is when the Genesis js applies a menu bg
-
-    .white {
-      .site-title a,
-      .menu a {
-        color: black;
-      }
-
-      .big-menu-social svg {
-        fill: #000;
-      }
-    }
-  }
-
-  .page-books,
-  .page-coaching,
-  .page-speaking,
-  .page-consulting,
-  .page-press,
-  .page-articles,
-  .page-the-institute,
-  .page-courses {
-    #genesis-content {
-      padding: 0;
-      max-width: 100%;
-    }
-
-    .wp-block-image img {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-    }
-  }
-
-  // coaching only
-
-  .lede-coaching {
-    .colin-quote-image {
-      align-items: flex-start;
-      justify-content: space-around;
-    }
-    .colin-quote {
-      margin-top: 8%;
-      max-width: 90%;
-      font-size: 2.2rem;
-      line-height: 4rem;
-    }
-  }
-
-  // consulting only
-
-  .consulting-lede {
-    .colin-quote {
-      max-width: 50%;
-    }
-    .colin-quote-image {
-      justify-content: flex-end;
-    }
-  }
-
-  // institute only
-
-  .institute-lede {
-    .colin-quote {
-      margin-left: auto;
-      max-width: 550px !important;
-      margin-top: -100px;
-      margin-right: 20px;
-    }
-  }
-
-  // styling the Genesis search form for use as a shortcode
-
-  .entry-content form.search-form {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-
-    .search-form-submit {
-      margin: 0;
-    }
-  }
-
-}
-
-@media only screen and (min-width: 1000px) {
-  .book-column-wrapper {
-    max-width: 750px;
-  }
-  .entry-content h4,
-  .entry-content h3,
-  .entry-content h2 {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  // coaching only
-
-  .lede-coaching {
-    .colin-quote {
-      width: 60%;
-      max-width: 900px;
-      margin-left: auto;
-      font-size: 2.8rem;
-      line-height: 4.6rem;
-    }
-  }
-
-  // articles / writing
-
-  .entry-content {
-    .publication-columns {
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-
-  // institute only
-
-  .institute-lede {
-    .colin-quote {
-      margin-right: 10%;
-    }
-  }
-
-}
-
-
-@media only screen and (min-width: 1200px) {
-  // consulting only
-
-  .consulting-lede {
-    .colin-quote {
-      max-width: 650px;
-      margin-right: -1%;
-    }
-  }
-
-  .lede-coaching {
-    .colin-quote {
-      margin-right: 12%;
+  body.page-writing {
+    main.content {
+      padding-top: 3rem;
     }
   }
 }
 
-
-@media only screen and (min-width: 1400px) {
-  // consulting only
-
-  .consulting-lede {
-    .colin-quote {
-      margin-right: auto;
-      margin-left: 50%;
-    }
+body.page-about-lauren,
+body.page-one-possible-page {
+  header.entry-header {
+    display: none;
   }
 
-  // institute only
+  main.content {
+    padding-top: 0;
+  }
 
-  .institute-lede {
-    .colin-quote {
-      margin-right: 20%;
+  .wp-block-atomic-blocks-ab-columns {
+    padding-top: 8% !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body.page-about-lauren,
+  body.page-one-possible-page {
+    .wp-block-atomic-blocks-ab-columns {
+      padding-top: 15% !important;
     }
   }
 }

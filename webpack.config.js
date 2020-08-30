@@ -32,12 +32,12 @@ const extractConfig = {
 module.exports = {
   entry: [
     './src/index.js',
-    './src/main.scss'
+    './src/main.scss',
   ],
   output: {
     path: path.resolve( __dirname, 'dist' ),
     filename: 'index.js',
-    publicPath: '/wp-content/plugins/colinstyles/dist/',
+    publicPath: '/wp-content/plugins/laurenstyles/dist/',
   },
   watch: 'production' !== process.env.NODE_ENV,
   devtool: 'cheap-eval-source-map',

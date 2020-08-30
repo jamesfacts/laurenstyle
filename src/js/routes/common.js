@@ -29,9 +29,9 @@ export default {
 
     // $('.nav-primary > .wrap').append( searchForm );
 
-    let $fbAnchor = $('<a/>').attr('href', 'XX').append( socialIcons.fb );
-    let $igAnchor = $('<a/>').attr('href', 'XX').append( socialIcons.ig );
-    let $emailAnchor = $('<a/>').attr('href', 'XX').append( socialIcons.email );
+    let $fbAnchor = $('<a/>').attr('href', 'https://facebook.com/lauren').append( socialIcons.fb );
+    let $igAnchor = $('<a/>').attr('href', 'https://instagram.com/laurenkrauze').append( socialIcons.ig );
+    let $emailAnchor = $('<a/>').attr('href:', 'mailto:laurenkz@gmail.com').append( socialIcons.email );
 
     let $smallSocialHtml = $( '<li/>', { class: 'small-menu-social' })
                            .append( $fbAnchor.clone() )
