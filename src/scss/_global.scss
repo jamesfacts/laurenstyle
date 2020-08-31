@@ -11,7 +11,7 @@
 
 body {
   a, .entry-title a:focus, .entry-title a:hover, .featured-content .entry-meta a:focus, .featured-content .entry-meta a:hover, .front-page .genesis-nav-menu a:focus, .front-page .genesis-nav-menu a:hover, .front-page .offscreen-content-icon button:focus, .front-page .offscreen-content-icon button:hover, .front-page .white .genesis-nav-menu a:focus, .front-page .white .genesis-nav-menu a:hover, .genesis-nav-menu a:focus, .genesis-nav-menu a:hover, .genesis-nav-menu .current-menu-item > a, .genesis-nav-menu .sub-menu .current-menu-item > a:focus, .genesis-nav-menu .sub-menu .current-menu-item > a:hover, .genesis-responsive-menu .genesis-nav-menu a:focus, .genesis-responsive-menu .genesis-nav-menu a:hover, .menu-toggle:focus, .menu-toggle:hover, .offscreen-content button:hover, .offscreen-content-icon button:hover, .site-footer a:focus, .site-footer a:hover, .sub-menu-toggle:focus, .sub-menu-toggle:hover {
-    color: #4dafae;
+    color: #1699ad;
   }
 }
 
@@ -19,12 +19,16 @@ body {
   display: none;
 }
 
+.nav-primary .genesis-nav-menu li {
+  text-align: center !important;
+}
+
 .front-page .nav-primary .genesis-nav-menu a {
   color: black !important;
 }
 
 .front-page .nav-primary .genesis-nav-menu a:hover {
-  color: #4dafae !important;
+  color: #1699ad !important;
 }
 
 
@@ -98,12 +102,6 @@ footer .credits {
 
 
 @media only screen and (min-width: 800px) {
-
-  header.site-header {
-    background-color: transparent;
-    color: transparent;
-    border: none;
-  }
 
   header.site-header > .wrap {
     display: flex;

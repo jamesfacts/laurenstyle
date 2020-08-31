@@ -13,7 +13,7 @@ function mcSubForm($atts)
 {
     $atts = shortcode_atts(
         ['action-url' => 'https://laurenkrauze.us17.list-manage.com/subscribe/post?u=05bb414ea67886909d9c6ef90&amp;id=d357f69d5b',
-                           'sub-call' => 'I\'m excited to share new writing.',
+                           'sub-call' => 'I\'m excited to share new writing and updates about public workshops.',
                            'hed' => 'Sign Up For My Newsletter' ],
         $atts
     ) ;

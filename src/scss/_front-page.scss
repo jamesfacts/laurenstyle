@@ -1,3 +1,5 @@
+
+
 .front-page {
   .front-page-1 {
     padding-bottom: 230px;
@@ -6,5 +8,20 @@
 
   .front-page-2 {
     padding-top: 80px;
+  }
+}
+// .header-image.front-page .site-header
+
+@media only screen and (min-width: 800px) {  
+  .header-image.front-page header.site-header  {
+    background-color: transparent;
+    color: transparent;
+    border: none;
+  }
+
+  .header-image.front-page .white header.site-header  {
+    background-color: white;
+    // color: transparent;
+    border: 1px solid white;
   }
 }
